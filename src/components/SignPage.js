@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import FacebookIcon from '@material-ui/icons/Facebook';
-import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
+// import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
+import Signin from './Images/SignIn.jpg'
+
 
 const Container = styled.div `
     
@@ -38,7 +40,6 @@ const Image = styled.img `
 
 const RightContainer = styled.form `
     display:flex;
-    align-items: center;
     justify-content: flex-start;
     flex-direction: column;
     /* flex:1; */
@@ -49,11 +50,12 @@ const RightContainer = styled.form `
         width: 100%;
     }
     `
-const Language = styled.div `
-      `
+
 const Title = styled.h1 `
         /* margin: 10px 10px */
         margin-bottom:3px;
+        font-size: 2.5rem;
+        font-weight: 600;
 /* flex-direction: column; */
 /* align-items: center; */
 /* justify-content: center; */
@@ -72,7 +74,7 @@ const Input = styled.input `
     /* border: none; */
     ` 
 const ButtonContainer = styled.div `
-        display:flex;
+    display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -114,7 +116,7 @@ const SignPage = () => {
                 <Message>
                     Where we help each other
                 </Message>
-                <Image src="SignIn.jpg"/>
+                <Image src={Signin}/>
             </LeftContainer>
             <RightContainer>
                 {/* <Language>EN<ArrowDropDownIcon/></Language> */}

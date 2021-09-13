@@ -3,6 +3,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import styled from 'styled-components'
 import MenuIcon from '@material-ui/icons/Menu';
 import './Header.css'
+import logo from './Images/logo.png'
 
 const Container = styled.div `
         display:flex;
@@ -48,8 +49,16 @@ const A= styled.a `
         letter-spacing: 2px;
 ` 
 const Menu = styled.div `
-         width: 40px;
-         height:30px;
+         width: 48px;
+        height: 48px;
+        display: none;
+        @media (max-width:600px){
+            /* display: block; */
+            display: block;
+            
+            z-index:2;
+                }
+    
 
 `
 
@@ -103,7 +112,7 @@ export default function Header() {
 
 
 const clickHandler = ()=>{
-    if(rotate!==-100){
+    if(rotate===-100){
         setRotate(0);
     }
     
@@ -113,14 +122,10 @@ const clickHandler = ()=>{
 
 }
 
-const MenuStyle = {
-    
-    
-}
 return (
         <Container >
             <LogoContainer>
-                <Logo src="logo.png" alt="logo" />
+                <Logo src={logo} alt="logo" />
                 <LogoName>PEPA SEARCH</LogoName>
             </LogoContainer>
             <LinksList>
@@ -135,15 +140,15 @@ return (
                 <SearchIcon  style={{color:"#D5d5d5", border:"none"}}/>
                     </SearchIconContainer>
             
-
+                <Menu>
                 <MenuIcon className='Icon' style={{width: "48px",
                             height: "48px",
-                            zIndex:"2"
+                            // zIndex:"2"
                             // right:'90px',
                             // position: "absolute",
                             // right: "7px"
                             }} onClick={clickHandler}/>
-                
+                </Menu>
                 </SearchContainer>
         </Container>
     )

@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/signinpage/static/css/main.bf2b627f.chunk.css",
+    "main.js": "/signinpage/static/js/main.99672b91.chunk.js",
+    "main.js.map": "/signinpage/static/js/main.99672b91.chunk.js.map",
+    "runtime-main.js": "/signinpage/static/js/runtime-main.e59da56c.js",
+    "runtime-main.js.map": "/signinpage/static/js/runtime-main.e59da56c.js.map",
+    "static/js/2.1b4b35bb.chunk.js": "/signinpage/static/js/2.1b4b35bb.chunk.js",
+    "static/js/2.1b4b35bb.chunk.js.map": "/signinpage/static/js/2.1b4b35bb.chunk.js.map",
+    "index.html": "/signinpage/index.html",
+    "static/css/main.bf2b627f.chunk.css.map": "/signinpage/static/css/main.bf2b627f.chunk.css.map",
+    "static/js/2.1b4b35bb.chunk.js.LICENSE.txt": "/signinpage/static/js/2.1b4b35bb.chunk.js.LICENSE.txt",
+    "static/media/SignIn.34bd58fb.jpg": "/signinpage/static/media/SignIn.34bd58fb.jpg",
+    "static/media/logo.11311b09.png": "/signinpage/static/media/logo.11311b09.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e59da56c.js",
+    "static/js/2.1b4b35bb.chunk.js",
+    "static/css/main.bf2b627f.chunk.css",
+    "static/js/main.99672b91.chunk.js"
+  ]
+}
